@@ -1,0 +1,122 @@
+body {
+    background:#40abf3c0;
+    font-family: sans-serif;
+    color:black;
+}
+
+svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    background: #92F18A;
+    color:white;
+    font-size: 20px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    margin: 2px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+
+.inline {
+    display: inline;
+}
+
+.intro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 57em;
+    text-align: center;
+    font-size: 20px;
+    color: #195484;
+    line-height: 1.6;
+}
+
+.questions {
+    background:#c5e0e5;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    color:#2B5F96;
+    font-family: Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 39em;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button {
+    transition-duration: 0.4s;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 37px;
+    border-radius: 6px;
+    border: 0px
+}
+  
+button:hover {
+    background-color: #0D5484;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.answers {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 30em;
+}
+
+#parallax {
+    background-image: url('https://images.unsplash.com/photo-1595932613109-0c43d8b062cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+    background-color: black;
+    background-attachment: fixed;
+    background-position-y: -0.2;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+section {
+    text-align: center;
+    color: white;
+    transition: 0s linear;
+    transition-property: background-position;
+    height: 500px;
+}
+  
+#section-container {
+    padding-top: 7%
+}
+
+#sources{
+    padding-top: 13%;
+    font-size: 33px;
+}
+
+#humans {
+    font-weight: bold;
+}

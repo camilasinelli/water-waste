@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Water Waste</title>
+        <link href = "main.css" rel = "stylesheet" type = "text/css" >
+        <script src="script.js"></script>
+
+        <div class="container">
+            <ul>
+                <li>Home</li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </div>
+    </head>
+
+    <body>
+        <img src="Water_Waste_Logo.png" width="250" height="250" alt="Earth with water drop" class="center"/>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="693" height="150" xml:space="preserve">
+            <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+                <path fill="#1794E8" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z" />
+            </pattern>
+            <g>
+                <text id="text" text-align="center" x="45" y="100" style="font-weight:bold;font-size: 60pt; font-family: Futura">WATER WASTE</text>
+            </g>
+          
+            <mask id="text-mask">
+                <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff" />
+            </mask>
+            <g id="eff">
+                <use x="0" y="0" xlink:href="#text" fill="#0D5484" />
+                <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="45" width="1200" height="150" opacity="0.9">
+                    <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="3s" />
+                </rect>
+            </g>
+          
+            <use xlink:href="#eff" opacity="0.9" />
+        </svg>
+
+        <div class="intro">
+            <h3>With almost 40% of the world population and many ecosystems suffering from water scarcity, conserving water has become very important. 
+                To find out how much water you spend <u>per day</u> and see your impact on the environment, answer the questions below.</h3><br>
+        </div>
+
+        <div class="questions">
+                How long (in minutes) do spend in the shower on average? <input type="text" id="shower" size="4" name="shower"><br><br>
+                How many baths do you take? <input type="text" id="bath" size="4" name="bath"><br><br>
+                How long (minutes) do you spend to do the dishes? <input type="text" id="dishes" size="4" name="dishes"><br><br>
+                How many times do you turn on the dishwasher? <input type="text" id="dishwasher" size="4" name="dishwasher"><br><br>
+                How many times do you turn on the washing machine? <input type="text" id="washing" size="4" name="washing"><br><br>
+                How many times do you flush your toilet? <input type="text" id="toilet" size="4" name="toilet"><br><br>
+                How long (minutes) do you spend on hygiene? (brushing teeth, washing face, etc) <input type="text" id="hygiene" size="4" name="hygiene"><br><br>
+                <button onclick="questions()">Results</button><br><br>
+                <div class="answers">
+                    <p class="inline" id="total"></p>
+                    <p class="inline" id="gal"></p>
+                    <p class="inline" id="humans"></p>
+                    <p class="inline" id="bodies"></p>
+                    <p id="end"></p>
+                </div>
+        </div><br><br>
+    </body>
+</html>
